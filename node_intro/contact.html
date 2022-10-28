@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+<link rel="stylesheet" href="style.css">
+<body>
+    <!-- styling starts here -->
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        font-family: "Playfair Display";
+    }
+    html, body{
+        background-color: black;
+        color: aliceblue;
+    }
+    a{
+        color: white;
+        cursor: pointer;
+    }
+    .about-me img{
+        width: 100px;
+        float: left;
+        margin-right: 15px;
+    }
+    .contact-us img, .prjct img{
+        width: 100%;
+    }
+    
+    .body-contact{
+        width: 70%;
+        display: block;
+        margin: auto;
+        padding: 40px;
+    }
+    label{
+        width: 100%;
+    }
+    input, textarea{
+        width: 60%;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+    }
+    #btn-submit{
+        width: 60%;
+        font-size: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        background-color: aquamarine;
+        cursor: pointer;
+    }
+    
+    #btn-submit:hover{
+        background-color: black;
+        border: 2px white solid;
+        color: white;
+    }
+    
+    /* Top navuigation bar */
+    .nav-bar{
+        margin-top: 10px;   
+    }
+    .nav-bar li{
+        width: 100px;
+        background: rgba(0,0,0,0.5);
+        display: inline;
+        padding: 15px 30px;
+    }
+    .nav-bar a:hover{
+        width: 100px;
+        border-bottom: 5px white solid;
+    }
+    
+    .active{
+        color:rgb(94, 235, 190);
+        font-weight: bolder;
+        background-color: black;
+        border-radius: 20px;
+        padding: 14px 20px;   
+    }
+    
+    .mobile-menu{
+        display: none;
+    }
+    
+    .top-nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+        z-index: 500;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .logo{
+        text-align: center;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        float: left;
+        background-color: black;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .compact-menu >li{
+        display: none;
+        text-align: center;
+        width: 200px;
+        padding: 12px;
+        /* border-top: 0.1px rgb(188, 179, 179) solid; */
+    }
+    .compact-menu{
+        float: right;
+        background: black;
+        /* position: relative; */
+    }
+    
+    .compact-menu > li:hover{
+        padding: 10px;
+        background-color: rgb(94, 235, 190);
+    
+    }
+    /* Hero banner content */
+    .hero-container{
+        background: url(images/hero-banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -900;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: -20%;
+        width: 100%;
+        color: white;
+        padding: 25% 30px 0 30px;
+    }
+    .hero-text{
+        width: 100%;
+        padding: 40px 10px;
+    
+    }
+    .hero-left{
+    font-family: Georgia, serif;
+    font-size: 2.1em;
+    }
+    
+    .job-description{
+        color:rgb(94, 235, 190);
+        font-style: italic;
+    }
+    .appointment-btn{
+        margin-top: 50px;
+        padding: 20px;
+        width: 400px;
+        font-size: 25px;
+        border-radius: 30px;
+        border: none;
+        color: white;
+        background-color: rgb(0, 170, 255);
+        cursor: pointer;
+    }
+    .journey-text{
+        text-align: center;
+        margin: 20px;
+    }
+    /* Main conrent styling */
+    
+    .body-content{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin: auto;
+        height: 100vh;
+        padding-bottom: 150px;
+    }
+    .main-content{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        padding: 10px;
+    }
+    
+    .another-image img{
+        width: 100%;
+    }
+    .main-content p{
+        width: 100%;
+        text-align: justify;
+    }
+    .main-content img{
+        width: 100%;
+    }
+    .mobile-menu{
+        text-align: right;
+    }
+    
+    /* footer styling */
+    .footer{
+        bottom: 0;
+        margin-top: 20px;
+        background-color: rgb(35, 31, 31);
+        width: 100%;
+        padding-top: 50px;
+        margin-top: auto;
+    }
+    .footer footer{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        height: 100px;
+    }
+</style>    
+<!-- styling ends here -->
+    <div class="main-container">
+        <div class="top-nav-bar">
+            <div class="logo">
+                <p><i class="fa fa-crosshairs fa-3x" aria-hidden="true"></i></p>
+            </div>
+            <ul class="nav-bar">
+                <li  class="home"><i class="fa fa-home" aria-hidden="true"></i><a href="home.html" > Home</a> </li>
+                <li><a href="about.html"  class="about-me">About Me</a> </li>
+                <li class="my-project"><a href="projects.html">My Projects</a> </li>
+                <li ><a href="#"  class="contact-me active">Contact Me</a> </li>
+            </ul>
+            <div class="mobile-menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="contact-us">
+            <img src="images/contact.png" alt="">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="body-contact">
+            <!-- body content goes here -->
+            <form action="example.com" method="POST">
+                <label for="name"> Name <br>
+                    <input type="text" name="name" placeholder="Enter your name">
+                </label><br>
+                <label for="email"> Email Address <br>
+                    <input type="email" name="email" placeholder="your-email@email.com">
+                </label><br>
+                <label for="msg"> Message <br>
+                    <textarea rows="10" cols="">Message</textarea>
+                </label><br>
+                <button type="submit" id="btn-submit">Submit</button>
+            </form>
+        </div>
+
+        
+        <!-- footer content -->
+        <div class="footer">
+            <footer>Copyright &copy; 2022 by Reuben Enahoro. All Rights Reserved.<br>
+              Zuri Cohort II, 2022.
+            </footer>         
+        </div>
+    </div>
+</body>
+</html>
